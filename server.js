@@ -1,13 +1,15 @@
 var http = require('http');
 var url = require('url');
 
+var port = process.env.PORT || 8888;
+
 http.createServer(function(request, response) {
 	response.writeHead(200, {"Content-Type": "text/plain"});
 	var parsedURL = url.parse(request.url);
 	var URLpath = parsedURL.pathname.replace("/", "");
 	response.write(date_test(URLpath));
 	response.end();	
-}).listen(8888);
+}).listen(port);
 
 function date_test(date_in) {
 	var date1 = parseInt(date_in);
