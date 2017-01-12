@@ -13,8 +13,8 @@ http.createServer(function(request, response) {
 
 function date_test(date_in) {
 	var date1 = parseInt(date_in);
-	console.log(date_in.replace(/[A-Za-z]/gi, ""));
-	if (date_in.replace(/[A-Za-z]/gi, "").length < 13) {
+	console.log(date_in.match(/\D/gi));
+	if (date_in.match(/\D/gi) !== null) {
 		date1 = Date.parse(date_in.replace("%", " "));
 	}
 	var date2 = new Date(date1).toDateString();
