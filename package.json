@@ -1,6 +1,6 @@
 {
-	"name": "fcc-timestamp",
-	"description": "Free Code Camp Timestamp API Microservice",
+	"name": "fcc-header",
+	"description": "Free Code Camp Request Header API Microservice",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"

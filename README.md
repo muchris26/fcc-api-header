@@ -1,10 +1,8 @@
-# fcc-api-timestamp
-FreeCodeCamp - API Microservices - Timestamp
+# fcc-api-header
+FreeCodeCamp - API Microservices - Request Header Parser
 
-Running on Heroku: http://fcc-timestamp-microserver.herokuapp.com/
+Returns IP address, Language and Operating System for my Browser
 
-Formats accepted:
-* Month/YYYY/D
-* Month-YYYY-D
-* M/D/YYYY
-* M-D-YYYY
+Example:
+
+{"ipaddress":"73.29.239.11","language":"en-US","software":"X11; Ubuntu; Linux i686; rv:50.0"}
